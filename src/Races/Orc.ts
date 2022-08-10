@@ -1,10 +1,10 @@
 import Race from './Race';
 
 class Orc extends Race {
+  private _maxLifePoints: number;
   static instances = 0;
 
   constructor(
-    private _maxLifePoints: number,
     name: string,
     dexterity: number,
   ) { 
