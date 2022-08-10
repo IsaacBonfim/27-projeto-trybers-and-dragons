@@ -10,7 +10,9 @@ class PVE extends Battle {
   }
 
   fight(): number {
-    for (let index = 0; index < 100; index += 1) {
+    const aux = this.monsters.length;
+
+    for (let index = 0; index < aux; index += 1) {
       this.player.attack(this.monsters[0]);
 
       if (this.monsters[0].lifePoints <= 0) {
